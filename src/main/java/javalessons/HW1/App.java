@@ -1,7 +1,5 @@
 package javalessons.HW1;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
+import java.util.*;
 import java.lang.Math;
 
 
@@ -16,6 +14,7 @@ public class App
         System.out.print("\n");
         setDemo();
         System.out.println();
+        mapDemo();
         
     }
     
@@ -60,5 +59,23 @@ public class App
     	System.out.println(zipCode);
     }
     
+    static void mapDemo()
+    {
+    	// Students Pass/Fail
+    	Map<String, String> studentReport = new HashMap<String,String>();
+    	String [] students = {"Tim","James","Jan","Tom","Larry"};
+    	String tmpStr;
+    	for(int i =0; i<students.length;i++)
+    	{
+    		if (Math.random() > 0.5) tmpStr = "pass";
+    		else tmpStr = "fail";
+    		studentReport.put(students[i], tmpStr);
+    	}
+    	for (Map.Entry<String, String> record: studentReport.entrySet())
+    	{
+    		System.out.print(record.getKey() + ":");
+    		System.out.println(record.getValue());
+    	}
+    }
     
 }
