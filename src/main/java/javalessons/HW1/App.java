@@ -1,7 +1,9 @@
 package javalessons.HW1;
 import java.util.*;
+import java.io.IOException;
 import java.lang.Math;
-
+import java.nio.file.*;
+import java.util.regex.*;
 
 public class App 
 {
@@ -16,7 +18,8 @@ public class App
         System.out.println();
         mapDemo();
         System.out.println();
-        
+        IODemo();
+        regExDemo();
         
     }
     
@@ -77,6 +80,48 @@ public class App
     	{
     		System.out.print(record.getKey() + ":");
     		System.out.println(record.getValue());
+    	}
+    }
+    
+    static void IODemo()
+    {
+    	String TXT_FILE = "C:/Users/Tako/Desktop/txtFile.txt";
+    	Path textFilePath = Paths.get(TXT_FILE);
+    	try {
+			Files.createFile(textFilePath);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	String txtContent = "Testing file output";
+    	try {
+			Files.write(textFilePath, txtContent.getBytes());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
+    static void regExDemo()
+    {
+    	ArrayList<String> dates = new ArrayList();
+    	dates.add("1/1/11");
+    	dates.add("01/017/11");
+    	dates.add("01/01/2011");
+    	dates.add("01//2011");
+    	dates.add("1/11/2011");
+    	dates.add("1/11/1");
+    	dates.add("11/1/1661");
+    	
+
+    	String regex = "^[0-3]?[0-9]/[0-3]?[0-9]/(?:[0-9]{2})?[0-9]{2}$";
+    	
+    	Pattern pattern = Pattern.compile(regex);
+    	 
+    	for(String date : dates)
+    	{
+    	  Matcher matcher = pattern.matcher(date);
+    	  System.out.println(date +" : "+ matcher.matches());
     	}
     }
     
