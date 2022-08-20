@@ -34,5 +34,28 @@ Installing Java Notes
 			Use echo to values of variables
 			example: echo %JAVA_HOME%
 			C:\Program Files\Java
-		
+		java -version command
+			Use java -version to check if java/app was installed
+	
+	Using Maven
+		Must have JAVA_HOME variable set correctly
+		Navigate to active directory
+		mvn package command
+			creates a jar file w/ a snapshot of current project
+		mvn install command
+			creates file directory of current project
+	
+	Using Github
+		git init command
+			initializes a git repo at current directory
+		git add command
+			adds a folder to monitor for current repo
+		git status
+			checks for differences between local and master branch of repo
+		git commit 
+			add changes to be made from local repo
+			will need to add a commit message in text editor (press insert key)
+				to quit out of a editor/viewer use ":wq"
+			git commit 
+
 */			
