@@ -129,4 +129,66 @@ public class JavaLessons1_1 {
  *		Superset of JRE with development tools for developing, debugging, and monitor Java applications
  *
 */			
+//Difference between 32-bit Java Vs. 64-bit Java
+/*
+ * Memory Size
+ * 		32-bit systems are limited to 4gb of ram, half of 4gb is reversed for system use only
+ * 		Address space must be continuous to be used, so only 1.5-1.8Gb of heap is left
+ * 		64-bit systems with windows Home-Edition have up to 16Gb of ram, Professional 192Gb
+ * Heap Size
+ * 		In 64-bit system heap sizes require 30-50% more than 32-bit systems, due to 64-bit memory architecture
+ * Longer Garbage Collection Pauses
+ * 		Larger heap sizes means more work during garbage collection, building heaps larger than 12-16Gb may result
+ * 		in GC (garbage collection) pauses spanning several minutes
+ * Compatibility
+ * 		32-bit compiler can be used on 64-bit java using WoW64 (application switches to 32 bit architecture) 
+ * 		Max ram allocated to java on a 32-bit machine is 1.5Gb
+ */
+//Difference between Java.exe and Javaw.exe
+/*
+ * Javaw launches with a GUI and Java launches with a CLI
+ */
+//Java Naming Conventions
+/*
+ * Naming Packages
+ * 		Group of words separated by dots and all lower-case, always starts with a domain name
+ * 		example: package com.howtodinjava.webapp.controller;
+ * 		example: package com.quintrex.javalessons
+ * 		TIP: convention goes from broad to specific
+ * Naming Classes
+ * 		Classes are nouns, first letter of each word capitalized
+ * 		example: public class ArrayList {}
+ * 		example: public class Employee {}
+ * Naming Interfaces
+ * 		Interfaces are adjectives, first letter of each word is capitalized
+ * 		example: public interface Serializable {}
+ * 		example: public interface Iterable {}
+ * Naming Methods
+ * 		Methods are always verbs, camel case notation
+ * 		example: public Long getId() {}
+ * 		example: public void remove(Object o) {}
+ * Naming Variables
+ * 		camel case, temporary variables can be a single character
+ * 		example: public Long id;
+ * 		example: public EmployeeDao emloyeeDao;
+ * Naming Constants
+ * 		All upper-case, separated by underscore 
+ * 		example: public final String SECURITY_TOKEN = "..."
+ * 		example: public final int INTIAL_SIZE = 16;
+ * Naming Generics
+ * 		Upper-case single letters
+ * 		example: public interface Map <K,V> {}
+ * 		example: public interface List<E> extends Collection<E> {}
+ * Naming Enums
+ * 		All upper-case letters
+ * 		example: enum Direction {NORTH, EAST, SOUTH, WEST}
+ * Naming Annotations
+ * 		First letter of every word should be upper-case
+ * 		example: public @interface FunctionalInterface {}
+ * 		example: public @interface Test Documented {}
+ */
+//Java Classes and Objects
+/*
+ * 
+ */
 }
