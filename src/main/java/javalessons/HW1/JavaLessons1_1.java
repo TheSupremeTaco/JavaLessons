@@ -189,6 +189,41 @@ public class JavaLessons1_1 {
  */
 //Java Classes and Objects
 /*
+ * Difference between Objects and Classes
+ * 		Classes are templates that describe the state and behavior of its objects, objects
+ * 		represent actions in the system/application 
+ * Declaring a Class 
+ * 		example:
+ * 				<<modifiers>> class <<class name>> {
+ * 				}
+ * 		Class declaration may have zero/or more modifiers
+ * 		example:
+ * 				public class Main
+ * 				{
+ * 					//Body of class
+ * 				}
+ * 		Class Types: abstract, non-abstract
+ * 			Abstract classes are incomplete classes, can't create instances, can extend to complete
+ * 			their specifications
+ * 			Non-Abstract classes are defined full state and behavior, can create instances of class
+ * 	Components of Java Classes: Fields, Methods, Constructors, Static Initializers, Instance Initializers
+ * 		FIELDS are properties of a objects of the class
+ * 			General Syntax:
+ * 				public class Main
+ * 				{
+ * 					<<modifiers>> <<data type>> <<field name>> = <<initial value>>;
+ * 				}
+ * 			example:	
+ * 				public class Human
+ * 				{
+ * 					String name;
+ * 					String gender;
+ *	 			}
+ * 		
+ * 		METHODS/FUNCTIONS is a collection of statement grouped together	
+ * 		Test
+ * 
+ * 
  * 
  */
 }
