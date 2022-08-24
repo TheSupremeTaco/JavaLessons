@@ -354,6 +354,84 @@ public class JavaLessons1_1 {
  */
 /*
  * JAVA OPERATORS 
- * 
+ * 		Three Main Types
+ * 			Unary: one operand, binary: two operand, ternary: three operands
+ * 		Assignment Operator (=)
+ * 			Assigns values to a variable, take two operands
+ * 			example:	int count = 26;
+ * 		Arithmetic Operators (+,-,*,/)
+ * 			Only work with numeric type operands, does arithmetic
+ * 			For full list of Unary/Binary arithmetic operators check online documentation
+ * 		String Concatenation Operator
+ * 			Concatenate (adds/converts) two strings
+ * 			example: String str3 = "Hello" + "World";
+ * 			Concatenates primitive to string
+ * 			example: String str2 = 26 + "Alphabets"
+ * 			Concatenate null with string
+ * 			example: String str3 = "I am " + null;
+ * 		Relational Operators (==,!=,<,>,>=,<=)
+ * 			Produces a boolean value of true or false
+ * 			example: if (20 > 10)
+ * 		Boolean Logical Operators (!,&&,&,||,|,^,!=,^=)
+ * 			used for logic, come-on this is something you learned earlier lol
+ * 			example: (20 > 10 && 20 < 20)
+ * 		Bitwise Operators
+ * 			manipulates individual bits of its operands
+ * 			look at documentation for full list
+ * 		Ternary Operator (?,:)
+ * 			Takes three operands
+ * 			If boolean-expression evaluates to true it gives the true-expression otherwise
+ * 			gives the false expression
+ * 			example: 
+ * 				int number1 = 20;
+ * 				int number2 = 40;
+ * 				int biggerNumber = (number1 > number2) ? number1 : number2
+ * 				//Compares both numbers and returns which one is bigger
+ * 		Java Operator Precedence Table
+ * 			Just check the documentation
+ */
+/*
+ * Java Data Types
+ * 		Variable Declarations
+ * 			Variable name: refers to memory location
+ * 			Variable Type: refers to the type stored at memory location
+ * 			Memory location: holds the value of variable 
+ * 		Data Types
+ * 			Primitive Data Types
+ * 				Directly holds a value in memory, not objects, no references, valued stored in
+ * 				primitives are referred as literals
+ * 				Type conversion between primitives
+ * 					Can assign primitive values to another primitive type, but can occur data loss
+ * 					example:
+ * 						int counter = 20_000_000;
+ * 						short shortCounter = (short) counter;
+ * 					Quick tip for data conversions: when java detects a conversion may result
+ * 					in data loss it gives a type-mismatch error and asks for type casting
+ * 					Type-Casting: (short) counter;
+ * 			Non-Primitive Data Type
+ * 				Holds reference to an object in memory, using reference to access the fields and
+ * 				methods of the referenced object
+ * 				Can refer multiple variables to the same object in memory
+ * 			Wrapper Class
+ * 				is a class whose object wraps/contains primitive data types
+ * 				Types of wrapper classes names (Boolean, Byte, Short, Character, Integer, Long, Float,
+ * 				and Double)
+ * 			Auto-boxing
+ * 				Assigning a primitive type to a wrapper class directly
+ * 				example: Integer counter = 20; static Float PI = 3.14f;
+ * 				Quick-Note: wrapper class instances are immutable (can't be changed after made)
+ * 			BEST PRACTICES
+ * 				Use primitives for local scope and non-primitive when data is transfered between 
+ * 				classes or methods (creates less memory overhead, just passes reference:no pass-by-value
+ * 				copy in memory)
+ * 				Collection will always use objects, not primitives
+ * 				While sending data over network, use objects and make them serializable(wrapper classes are
+ * 				automatically serializable)
+ * 				Use appropriate data sizing to save memory 
+ * 				Use underscores in numbers to make them more readable example: int i = 1_000_000
+ */
+/*
+ * Java Primitive Types
+ * 		
  */
 }
