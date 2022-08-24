@@ -3,7 +3,7 @@ package javalessons.HW1;
 public class JavaLessons1_1 {
 	public static void main( String [] args)
 	{
-		System.out.println("test");
+		//testConstructor();
 	}
 
 //Java Basics 6.1
@@ -221,9 +221,139 @@ public class JavaLessons1_1 {
  *	 			}
  * 		
  * 		METHODS/FUNCTIONS is a collection of statement grouped together	
- * 		Test
+ * 			Accepts as many to zero arguments, returns void or a SINGLE value, can be overloaded, and override
+ * 			example:
+ * 				public class Human 
+ * 				{
+ * 					String name;
+ * 					String gender;
+ * 					
+ * 					public void eat()
+ * 					{
  * 
+ * 						System.out.println("I am eating");
+ * 					}
+ * 				}
+ * 		CONSTRUCTORS
+ * 				Named block of code used to initialize an object immediately after object created
+ * 				example:
+ * 					<<Modifiers>> <<Constructors Name>>(<<parameters list>>) throws <<Exception list>>
+ * 					{
+ * 						//Body of constructor
+ * 					}
+ * 				Constructor modifiers: public, private, protected, or package-level (no modifier)
+ * 				Constructors do not have a return type
+ * 		INITIALIZATION BLOCKS
+ * 			Block of code outside of methods or constructors in a class w/o a name
+ * 		EXAMPLE
+ * 			Main.java
  * 
+ * 			public class Main
+ * 			{
+ * 
+ * 				//instance initializer
+ * 				{
+ * 					System.out.println("Inside instance initializer");
+ * 				}
+ * 			
+ * 				//constructor
+ * 				public Main()
+ * 				{
+ * 					System.out.println("Inside constructor");
+ * 				}	
+ * 			
+ * 				public static void main(String[] args)
+ * 				{
+ * 					new Main();
+ * 				}
+ * 			}
+ * 			Output:
+ * 			
+ * 			Inside instance initializer
+ * 			Inside constructor		
+ * 		STATIC INITIALIZATION BLOCK
+ * 			Initialize a class and happens once per class, happens before instance initializer, multiple possible
+ * 		EXAMPLE
+ * 			Main.java
+ * 
+ * 			public class Main
+ * 			{
+ * 
+ * 				//static initializer
+ * 				static {
+ * 					System.out.println("Inside static initializer");
+ * 				}
+ * 			
+ * 				//constructor
+ * 				public Main()
+ * 				{
+ * 					System.out.println("Inside constructor");
+ * 				}	
+ * 			
+ * 				public static void main(String[] args)
+ * 				{
+ * 					new Main();
+ * 				}
+ * 			}
+ * 			Output:
+ * 			
+ * 			Inside static initializer
+ * 			Inside constructor
+ * 		CREATING JAVA OBJECTS
+ * 			Use "new" keyword along with a constructor
+ * 			example:
+ * 				<<Class>> <<variables>> = new <<Call to Class Constructor>>;
+ * 			example:
+ * 				Human human = new Human();
+ * 		NULL REFERENCE
+ * 			Used for reference type variable to reference no object
+ * 			example:
+ * 				Human john = null; //john is not refer to an object
+ * 				john = new Human(); //john is referring to a valid Human object
+ * 			null references cannot be used for primitive type variables (can't compare primitive to null type)
+ */
+	//constructor practice
+	// this quick note: .this refers to current reference in constructor, this(..) refers to current reference w/ constructor overloading
+	static void testConstructor()
+	{
+		testConstructor testConstruct1 = new testConstructor(1, "test");
+		System.out.println(testConstruct1.getTestNum());
+		System.out.println(testConstruct1.getThisTestNum());
+		System.out.println(testConstruct1.getTestString());
+		System.out.println("Seperator");
+	}
+/*
+ * JAVA PASS-BY-VALUE vs. PASS-BY-REFERENCE
+ * 		When passing a object and you want to change its value you need to use a modifier
+ * 		method from the constructor's class, otherwise you're changing the tmp variables reference
+ * 		Refer to this link for graphic explanation https://howtodoinjava.com/java/basics/java-is-pass-by-value-lets-see-how/
+ */
+/*
+ * JAVA main() METHOD
+ * 		example:
+ * 			public class Main
+ * 			{
+ * 				public static void main(String[] args)
+ * 				{
+ * 					System.out.println("Hello World !!")
+ * 				}
+ * 			}
+ * 			Why Java main Method is public
+ * 				So the main method is accessible anywhere, it won't run if you don't match this
+ * 				syntax : "public static void main(String[] args)"
+ * 			Why static
+ * 				Can access the method without needing to create a class object
+ * 			Why void
+ * 				main() method doesn't need to return any values
+ * 			Why main
+ * 				industry standard
+ */
+/*
+ * JAVA KEYWORDS
+ * 		Just don't use any of the 50 reserved words for variables, classes, methods, etc names
+ */
+/*
+ * JAVA OPERATORS 
  * 
  */
 }
