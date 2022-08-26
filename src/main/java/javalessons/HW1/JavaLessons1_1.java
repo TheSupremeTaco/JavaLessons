@@ -474,6 +474,52 @@ public class JavaLessons1_1 {
  * 			example: boolean done = true;
  */
 /*
- * 
+ * Java Wrapper Classes
+ * 		wraps around a primitive data type and gives it an object appearance
+ * 		used whenever an object is needed in a list or class methods that extend the object
+ * 		each wrapper classes includes unwrap methods to convert it back to the original object
+ * 		When To Use Wrapper Classes
+ * 			When two methods want to refer to the same instance of an primitive type then pass wrapper
+ * 			class as method argument
+ * 			Java Generic works only with object types and does not support primitive types
+ * 			Java Generic example: BaseType <Type> obj = new BaseType <Type>()
+ * 			Cannot use primitive in Type parameter
+ * 			Java Collection only uses objects
+ * 			Refer null only works in objects
+ * 		Conversions
+ * 			Converting a primitive type into a wrapper class object
+ * 				Using a constructor: example: Integer object = new Integer(10);
+ * 				Using a static factory method: example: Integer anotherObject = Integer.valueOf(10);
+ * 			Converting a Wrapper class object to a primitive type
+ * 				using intValue(), doubleValue(), shortValue()
+ * 				example: Integer object = new Integer(10);
+ * 				example: int val = object.intValue(); //wrapper to primitive type
+ * 		Autoboxing and Unboxing
+ * 			Autoboxing
+ * 				Automatic conversion of primitive types into wrapper class
+ * 				example:
+ * 					List<Integer> integerList = new ArrayList<>()
+ * 						for (int i = 1; i <10; i++)
+ * 							{
+ * 								integerList.add(i) //int i converted to Integer
+ * 							}
+ * 			Unboxing
+ * 				Happens when converting from wrapper class to primitive type
+ * 				example:
+ * 					public static int sumOfEven(List<Integer> integerList)
+ * 					{
+ * 						int sum = 0;
+ * 						for (Integer i: integerList){
+ * 							if (i % 2 ==0)
+ * 								sum += 1;		//Integer from list to int conversion
+ * 						}
+ * 						return sum
+ * 					}
+ * 				Clarification: % and += operators do not work on integer objects, compiler at
+ * 				runtime automatically converts Integer to int primitive
+ */
+/*
+ * Java Variables
+ * 		
  */
 }
