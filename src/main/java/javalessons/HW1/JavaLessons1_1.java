@@ -432,6 +432,48 @@ public class JavaLessons1_1 {
  */
 /*
  * Java Primitive Types
- * 		
+ * 	INTEGRAL DATA TYPES
+ * 		int type
+ * 			32-signed java primitive data type
+ * 			Integer Wrapper Class
+ * 				defines twc constants to represent maximum and minimum values for int data type
+ * 				example: int max = Integer.MAX_VALUE;
+ * 		long type
+ * 			64-bit signed java primitive data type
+ * 			Type casting: type casting from long to int example: long num1 = (int) num2;
+ * 			Long Wrapper Class
+ * 				same as Integer(Long.MAX_VALUE // Long.MIN_VALUE;
+ * 		Byte type
+ * 			8-bit signed java data type, no byte literals
+ * 			Byte Wrapper Class
+ * 				same as Integer(Byte.MAX_VALUE // Byte.MIN_VALUE;
+ * 		Short type
+ * 			16-bit signed java primitive data type
+ * 			Short Wrapper Class
+ * 				same as Integer(Short.MAX_VALUE // Short.MIN_VALUE;
+ * 		Char data type
+ * 			16-bit UNSIGNED java primitive data type
+ * 			example: char c1= 'A';
+ * 			CHARACTER ESCAPE SEQUENCES
+ * 				\n : line feed
+ * 				\r : carriage return
+ * 				\f : form feed
+ * 				\b : backspace
+ * 				\t : tab
+ * 				\\ : backslash
+ * 				\" : double quote
+ * 				\' : single quote
+ * 				\u0041 : unicode escape sequence
+ * 				example: char c2 = '\u0041'; //same as c2 = 'A'
+ * 		Float type
+ * 			32 bit to store floating-point
+ * 		Double type
+ * 			64 bit to store floating-point number
+ * 		Boolean type
+ * 			true or false boolean literal values
+ * 			example: boolean done = true;
+ */
+/*
+ * 
  */
 }
