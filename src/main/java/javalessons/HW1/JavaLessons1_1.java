@@ -520,6 +520,71 @@ public class JavaLessons1_1 {
  */
 /*
  * Java Variables
- * 		
+ * 		What is a Variable?
+ * 			Variable Syntax
+ * 					[data_type][variable_name] = [variable_value];
+ * 					data_type: refer to the type of information stored in memory area
+ * 					variable_name: refer to the name of the variable
+ * 					variable_value: refer to value to be stored in memory area
+ * 					Example: int i = 10; String str ="howtodoinjava.com"; int[] scores = [1,2,3];
+ * 			Widening
+ * 				Converting a smaller primitive type variable into a bigger/wider primitive data type
+ * 				example: int i= 10; long j = i; 
+ * 			Narrowing
+ * 				Converting a larger primitive type value to a smaller size primitive data type,
+ * 				can result in data loss due to less number of bits available in smaller data type
+ * 				REQUIRES explicit type-casting to required data type
+ * 				example of data loss: 
+ * 					int i =198; byte j = (byte)i;
+ * 					printing out both statements: 198, -58
+ * 					The int primitive type did not convert successfully to byte primitive type
+ * 			Types of Variables in Java: Instance, Class, Local, and Parameters
+ * 				Instance Variables
+ * 					Declared without static keyword, unique to each instance of a class
+ * 					example: int counter = 20;
+ * 				Static variables
+ * 					Declared with static modifier, exactly one copy of this variable in existence
+ * 					example: static float PI = 3.14f;
+ * 					Quick Note: f at the end indicates a float value instance instead of default double for 
+ * 					variables declared with a decimal point value
+ * 					"public static" can be treated as global variable in java
+ * 				Local Variables
+ * 					temporary variables exist during the method execution
+ * 				Method Arguments
+ * 					Variable that is passed to a method when the method is called,
+ * 					Arguments are only accessible inside method that declares them
+ * 					example:
+ * 						public static void pint( int param ) //method argument 
+ * 						{
+ * 							System.out.println( param);
+ * 						}
+ * 			Difference between an instance variable and Class variable
+ * 				Instance variables are unique to each instance of a class
+ * 				Class variables are declared with static modifier and is only one copy of variable
+ * 				To class an instance variable you muse create a new instance of class, class variables
+ * 				can be accessed through class reference (do not need object instance)
+ * 				example:
+ * 					public class Data
+ * 					{
+ * 						int counter = 20;
+ * 						static float PI = 3.14f;
+ * 					}
+ * 					public class Main {
+ * 						public static void main(String[] args)
+ * 							{
+ * 								//New instance variable
+ * 								Data dataInstance = new Data();
+ * 								System.out.println( dataInstance.counter); //20
+ * 
+ * 								//Can access using class reference
+ * 								System.out.println( Data.PI );  //3.14
+ * 							}
+ * 						}
+ * 			Variable Naming Convention
+ * 				Constant/static final fields should in in all upper case separated by _
+ */
+/*
+ * Java Comments
+ * 
  */
 }
